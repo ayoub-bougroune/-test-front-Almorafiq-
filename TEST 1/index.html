@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Test 1</title>
+</head>
+<body style="background-color: gainsboro;">
+
+    <!---------------------Header----------------------->
+
+    <section class="item-container m-1">
+        <div class="item-1 bg-white rounded">
+            <img src="./assets/logo.png" alt="your-image-alt-text" class="img-fluid">
+            <label class="text-danger" id="box-text1" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+            <label class="text-dark"   id="box-text2"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+            <span  id="box-text3"    style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+        </div>
+        <div class="item-2 bg-white rounded">
+            <div class="d-flex align-items-end m-1"> 
+                <img src="./assets//Egyptian_Pounds.png" alt=""  style="max-width: 35%; position: relative; right:8px; bottom: 8px">
+                <label class="w-100  position-relative" style="bottom: 23px; right: 15px; font-size:11px; color:darkgrey;">Total Earnings</label>
+                <img src="./assets//arrow-green.png" alt=""  style="max-width: 10%; max-height: 1.2dvh; position: relative; bottom: 15px; right: 25px; font-size:11px">
+            </div>
+            <div class="d-flex flex-column m-2 position-relative" style="border-bottom: 1px solid #a3a0a0; bottom: 25px; "> 
+                <label class="text-dark w-100 fw-bold" style="font-size:14px">20,606,000,000</label>
+                <span  style="font-weight: bold; color:darkgrey; font-size:6px; margin-bottom: 10px">Egyptian Pounds</span> 
+            </div>
+            <label class="w-100 position-relative" style="bottom: 28px; left: 10px; font-size:11px; color:darkgrey;">Total Paid Calls</label>
+            <label class="text-dark position-relative"  style="bottom: 28px; left: 10px; font-weight: bold; font-size:14px">1,198</label>
+            <span  class="position-relative" style="font-weight: bold; bottom: 28px; left: 10px; color:darkgrey; font-size:8px">Call </span>
+            <img src="./assets//casque.png" alt=""  style="max-width: 20%; ; position: relative; bottom: 60px; left: 110px; font-size:10px">     
+        </div>
+         <div class="item-3 bg-white rounded">
+            <div class="position-relative w-100 d-flex flex-column"  style="top: 15px;">
+              <label class="text-dark position-relative"  style="bottom: 23px; left: 10px; font-weight: bold; font-size:10px">Consultant</label>
+              <span  class="position-relative" style="font-weight: bold; bottom: 23px; left: 10px; color:darkgrey; font-size:8px">Sales Revenue</span>
+              <img src="./assets//Egyptian_Pounds.png" alt=""  style="max-width: 5%; ; position: relative; bottom: 50px; left: 130px; font-size:11px"> 
+            </div>
+            <div class="position-relative w-100 d-flex flex-column align-content-end" style="left: 23px;">
+              <label  class="position-relative" style=" color:rgb(94, 91, 91); font-size:10px"> 2,502,000,000 &nbsp;&nbsp;&nbsp;Rany</label>
+              <label  class="position-relative" style=" color:rgb(94, 91, 91); font-size:10px"> 2,056,000,000 &nbsp;&nbsp;&nbsp;Dary</label>
+              <span  class="position-relative" style=" color:rgba(94, 91, 91); font-size:10px">  2,007,000,000 &nbsp;&nbsp;&nbsp;Mohamed</span>
+              <span  class="position-relative" style=" color: rgba(94, 91, 91); font-size:10px">  1,958,000,000 &nbsp;&nbsp;&nbsp;Hany</span>
+              <span  class="position-relative" style=" color:rgb(94, 91, 91); font-size:10px">  1,824,000,000 &nbsp;&nbsp;&nbsp;Khisho</span>
+            </div>
+           
+        </div>
+        <div class="item-4 bg-white rounded">
+             <label class="w-100 text-dark position-relative" style="top: 12px; left: 10px; font-weight:bold; font-size:11px;">Total Earnings by Months</label>
+            <div id="line_chart" style="width:100%; height:250px;"></div> 
+        </div>
+        <div class="item-5 bg-white rounded"> 
+            <div class="d-flex w-75" style="border-bottom: 1px solid #a3a0a0;">
+              <div class="circular-progress">
+                  <span class="progress-value">0%</span>
+               </div>
+               <div class="d-flex flex-column position-relative" style="top: 20px; right: 15px;">
+               <label class="w-100 position-relative" style="bottom: 28px; left: 10px; font-size:10px; color:rgb(36, 34, 34);">Total Paid</label>
+               <label class="text-dark position-relative"  style="bottom: 28px; left: 10px; font-weight: bold; font-size:10px">1,198</label>
+               <span  class="position-relative" style="font-weight: bold; bottom: 28px; left: 10px; color:darkgrey; font-size:8px">Call </span> 
+              </div>  
+            </div>
+             <div class="d-flex position-relative" style="top: 45px;">
+              <div class="circular-progress-unpaid">
+                  <span class="progress-value-unpaid">0%</span>
+               </div>
+               <div class="d-flex flex-column position-relative" style="bottom: 2px; right: 15px;">
+               <label class="w-100 position-relative" style="bottom: 28px; left: 10px; font-size:10px; color:rgb(36, 34, 34);">Total unpaid</label>
+               <label class="text-dark position-relative"  style="bottom: 28px; left: 10px; font-weight: bold; font-size:10px">359</label>
+               <span  class="position-relative" style="font-weight: bold; bottom: 28px; left: 10px; color:darkgrey; font-size:8px">Call </span> 
+              </div>  
+            </div>     
+        </div>
+        <div class="item-6 rounded">
+            <label class="w-100 position-relative" style="top: 0px; left: 10px; font-size:11px; color:rgb(253, 251, 251);">Monthly</label>
+            <label class="w-50 position-relative" style="border-bottom: 1px solid #FFF; top: 9Opx; right: 21px; font-size:9px; color:rgb(253, 251, 251);">Slicer</label>
+            <img src="./assets//arrow.png" alt=""  style="max-width: 10%; ; position: relative; bottom: 38px; left: 48px; font-size:10px">
+            <div class="d-flex position-relative" style="bottom: 5px">
+                <span class="text-light m-1" style="font-size: 10px;">Jan</span><span class="text-light m-1" style="font-size: 10px;">Feb</span><span class="text-light m-1" style="font-size: 10px;">Mar</span>
+            </div>
+            <div class="d-flex position-relative" style="bottom: 5px">
+                <span class="text-light m-1" style="font-size: 10px;">Apr</span><span class="text-light m-1" style="font-size: 10px;">May</span><span class="text-light m-1" style="font-size: 10px;">Jun</span>
+            </div>
+            <div class="d-flex position-relative" style="bottom: 5px">
+                <span class="text-light m-1" style="font-size: 10px;">Jul</span><span class="text-light m-1" style="font-size: 10px;">Aug</span><span class="text-light m-1" style="font-size: 10px;">Sep</span>
+            </div>
+            <div class="d-flex position-relative" style="bottom: 5px">
+                <span class="text-light m-1" style="font-size: 10px;">Oct</span><span class="text-light m-1" style="font-size: 10px;">Nov</span><span class="text-light m-1" style="font-size: 10px;">Dec</span>
+            </div>
+        </div>
+         <div class="item-7 bg-white d-flex flex-column  justify-content-end rounded">
+            <div class="d-flex flex-column position-relative m-2" style="bottom: 65px;">
+                <label class="text-dark"  style=" font-weight: bold; font-size:10px">Enreved Courses</label>
+                <label class="" style="font-weight: bold; font-size:15px; color:blueviolet">3,475  <span class="label text-black text-center position-relative" style="font-size:6px; bottom: 3px;">Courses</span></label>
+                <label class="text-dark "  style="font-size:10px">Average</label>
+                <span  style="font-weight: bold; color: #c7aa17; font-size:15px">2.23</span>
+            </div>
+            <div id="small_lineChart" class="position-absolute" style="width: 140px; height: 100px; right:8; top: 75px;"></div>     
+        </div>
+    </section>
+
+    <!---------------------Content---------------------->
+
+     <section class="item-container m-1">
+            <div class="parent-item">
+                <div class="child-item-1 bg-white rounded">
+                    <label class="text-dark m-2"  style=" font-weight: bold; font-size:10px">Advertising Channel</label>
+                    <div id="Donut_chart" class="position-relative w-100" style=" height: 200px; "></div>
+                    <div class="position-relative d-flex justify-content-center " style="bottom: 10px; align-items: space-between;">
+                        <div class="d-flex flex-column m-4 ">
+                            <label class="text-dark "  style="font-size:9px">Youtube Channel <br> <span class="text-dark">1.5B</span></label>
+                            <label class="text-dark "  style="font-size:9px">Google Ad <br> <span class="text-dark">2.3B</span></label>
+                            <label class="text-dark "  style="font-size:9px">WatsApp <br> <span class="text-dark">3.0B</span></label>
+                        </div>
+                        <div class="d-flex flex-column m-4">
+                            <label class="text-dark "  style="font-size:9px">Company Website <br> <span class="text-dark">3.9</span></label>
+                            <label class="text-dark "  style="font-size:9px">Facebook Page <br> <span class="text-dark">4.3B</span></label>
+                            <label class="text-dark "  style="font-size:9px">Television Ad <br> <span class="text-dark">5.7B</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="child-item-2 bg-white rounded">
+                    <div id="chart"></div>
+                    <label class="text-danger" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+                    <label class="text-dark"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+                    <span   style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+                </div>
+            </div>
+
+             <div class="parent-item-2">
+                <div class="child-item-c">
+                    <div class="child-item-1 bg-white rounded">
+                        <div id="chart"></div>
+                        <label class="text-danger" id="box-text1" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+                        <label class="text-dark"   id="box-text2"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+                        <span  id="box-text3"    style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+                    </div>
+                    <div class="child-item-2 bg-white rounded">
+                        <div id="chart"></div>
+                        <label class="text-danger" id="box-text1" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+                        <label class="text-dark"   id="box-text2"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+                        <span  id="box-text3"    style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+                    </div>
+                </div>
+               <div class="child-item-c">
+                  <div class="child-item-3 bg-white rounded">
+                        <div id="chart"></div>
+                        <label class="text-danger" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+                        <label class="text-dark"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+                        <span  style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+                  </div>
+                    <div class="child-item-4 bg-white rounded">
+                        <div id="chart"></div>
+                        <label class="text-danger" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+                        <label class="text-dark"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+                        <span  style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+                  </div> 
+               </div>               
+            </div>
+
+             <div class="parent-item-3"> 
+                    <div class="child-item-1 bg-white rounded">
+                        <div id="chart"></div>
+                        <label class="text-danger" id="box-text1" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+                        <label class="text-dark"   id="box-text2"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+                        <span  id="box-text3"    style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+                    </div>            
+            </div>
+
+            <div class="parent-item-4">
+                  <div class="child-item-1 bg-white rounded">
+                        <div id="chart"></div>
+                        <label class="text-danger" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+                        <label class="text-dark"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+                        <span  style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+                  </div>
+                    <div class="child-item-2 bg-white rounded">
+                        <div id="chart"></div>
+                        <label class="text-danger" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+                        <label class="text-dark"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+                        <span  style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+                  </div> 
+            </div>    
+    </section>
+
+    <!---------------------Footer----------------------->
+
+     <section class="item-container m-1">
+        <div class="item-8 bg-white rounded">
+            <div id="chart"></div>
+            <label class="text-danger" id="box-text1" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+            <label class="text-dark"   id="box-text2"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+            <span  id="box-text3"    style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+        </div>
+        <div class="item-9 rounded">
+             <label class="w-100 position-relative m-1" style="bottom: 10px; left: 10px; font-size:9px; color:rgb(253, 251, 251);">Sales Team</label>
+             <label class="w-50 position-relative" style="border-bottom: 1px solid #FFF; bottom: 10px; right: 15px; font-size:8px; color:rgb(253, 251, 251);">Slicer</label>
+             <img src="./assets//arrow.png" alt=""  style="max-width: 10%; ; position: relative; bottom: 45px; left: 40px; font-size:10px">
+             <label class="w-100 position-relative m-2" style=" bottom: 5px; left: 10px; font-size:9px; color:rgb(253, 251, 251);">Beyablo</label>
+             <label class="w-50 position-relative m-2" style=" bottom: 5px; right: 15px; font-size:9px; color:rgb(253, 251, 251);">Ravan</label>
+             <label class="w-50 position-relative m-2" style=" bottom: 5px; right: 15px; font-size:9px; color:rgb(253, 251, 251);">Ravan</label>          
+        </div>
+         <div class="item-10 bg-white rounded">
+            <div id="chart"></div>
+            <label class="text-danger" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+            <label class="text-dark"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+            <span   style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+        </div>
+        <div class="item-11 bg-white rounded">
+            <div id="chart"></div>
+            <label class="text-danger" style="text-align: center; font-weight: bold; font-size:9px">Other Level's</label>
+            <label class="text-dark"  style="text-align: center; font-weight: bold; font-size:9px">Sales Performances Metrics</label>
+            <span   style="text-align: center; font-weight: bold; color:darkgrey; font-size:9px">2022</span>     
+        </div>
+    </section>       
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  <script src="./JS/script.js"></script>
+  <script src="./JS/progresscircle.js"></script>
+  <script>
+      let lineChart  =  new Morris.Line({
+ 
+        element: 'small_lineChart',
+
+                data: [
+                    { year: '2001', value:3 },
+                    { year: '2002', value:1 },
+                    { year: '2003', value: 5 },
+                    { year: '2003', value: 1 },
+                    { year: '2004', value:25 },
+                    { year: '2005', value: 7 },      
+                ],
+
+                xkey: 'year',
+                ykeys: ['value'],
+                pointSize: 0,
+                lineWidth: 1,
+                lineColors: ['#e530d9'],
+                resize: true,
+                axes: true,
+                grid: true,
+     });
+  </script>
+  <script>
+  
+        Morris.Donut({
+            element: 'Donut_chart',
+            data: [
+                    { label: '2001', value:3 },
+                    { label: '2002', value:1 },
+                    { label: '2003', value: 5 },
+                    { label: '2003', value: 1 },
+                    { label: '2004', value:25 },
+                    { label: '2005', value: 7 },      
+                ],
+            
+            colors: ["#3498db", "#9b59b6", "#e74c3c", "#f1c40f", "#2ecc71"],
+            resize: true
+    });
+  </script>
+
+</body>
+</html>

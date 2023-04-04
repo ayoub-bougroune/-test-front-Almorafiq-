@@ -1,0 +1,7 @@
+Ce test est destiné à l'évaluation des compétences en JavaScript frameworks(Vue.js/ReactJS).
+Le sujet de ce test est de récréer la page envoyer sous forme de deux images (body.jpg et footer.png). 
+
+Merci de respecter les points suivants:
+	1 - Vous devez utiliser Vue.js ou ReactJS.
+	2 - Vous pouvez utiliser Bootstrap.
+	3 - Il est interdit d'utiliser un template.

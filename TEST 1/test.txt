@@ -1,0 +1,8 @@
+Ce test est destiné à l'évaluation des compétences en JavaScript.
+Le sujet de ce test est de récréer la page envoyer sous forme d'une image (index.jpg) Utilisant Vanilla JS / JQuery.
+
+Merci de respecter les points suivants:
+	1 - Vous pouvez utiliser Bootstrap.
+	2 - Vous pouvez utiliser morris.js ou un autre 'free library'
+	3 - Vous pouvez utiliser JQuery.
+	4 - Il est interdit d'utiliser un template.

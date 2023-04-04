@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+#chart {
+  width: 70px;
+  height: 15vh;
+}
+
+.img-fluid {
+  max-width: 50%;
+  max-height: 10dvh;
+  margin: 12px;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+}
+
+.circular-progress {
+  position: relative;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: conic-gradient(#2ae82a 3.6deg, #ededed 0deg);
+  border-radius: 50%;
+}
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.progress-value {
+  position: relative;
+  color: #101210;
+  font-size: 13px;
+  font-weight: 20;
+}
+
+.circular-progress-unpaid {
+  position: relative;
+  right: 15px;
+  bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: conic-gradient(#ededed 3.6deg,#bd1558 0deg);
+  border-radius: 50%;
+}
+.circular-progress-unpaid::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.progress-value-unpaid {
+  position: relative;
+  color: #101210;
+  font-size: 13px;
+  font-weight: 20;
+}
+
+/* !---------------------Header----------------------- */
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  height: 28dvh;
+  margin: 3px;
+}
+
+.item-2 {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+  height: 28dvh;
+  margin: 4px;
+}
+
+.item-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  height: 28dvh;
+  margin-right: 7px;
+  margin-left: 3px;
+  box-shadow: 12px 12px 5px #b9b7b7;
+}
+
+.item-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  height: 28dvh;
+  margin: 4px;
+}
+
+.item-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  height: 28dvh;
+  margin: 4px;
+}
+
+.item-5 .circular-progress {
+  position: relative;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: conic-gradient(#2ae82a 3.6deg, #ededed 0deg);
+  border-radius: 50%;
+}
+
+.item-5 .circular-progress::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.item-5 .progress-value {
+  position: relative;
+  color: #101210;
+  font-size: 13px;
+  font-weight: 20;
+}
+
+.item-5 .circular-progress-unpaid {
+  position: relative;
+  right: 15px;
+  bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: conic-gradient(#ededed 3.6deg,#bd1558 0deg);
+  border-radius: 50%;
+}
+
+.item-5 .circular-progress-unpaid::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.item-5 .progress-value-unpaid {
+  position: relative;
+  color: #101210;
+  font-size: 13px;
+  font-weight: 20;
+}
+
+.item-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 28dvh;
+  margin: 4px;
+  background-color: rgb(128, 181, 246);
+}
+
+.item-7 {
+  width: 10%;
+  height: 28dvh;
+  margin: 4px;
+}
+
+/* !---------------------Content----------------------- */
+
+
+.parent-item {
+  width: 20.5%;
+  margin-right: 7px;
+}
+
+.parent-item .child-item-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 45dvh;
+  margin: 3px;
+  margin-top: 1px;
+}
+
+.parent-item .child-item-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8dvh;
+  margin: 3px;
+  margin-top: 8px;
+}
+
+.parent-item-2 {
+  width: 45%;
+  margin-right: 7px;
+}
+
+.parent-item-2 .child-item-c {
+  display: flex;
+  width: 100%;
+}
+
+.parent-item-2 .child-item-c .child-item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 26dvh;
+  margin: 3px;
+  margin-top: 1px;
+}
+
+.parent-item-2 .child-item-c .child-item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 26dvh;
+  margin: 3px;
+  margin-top: 1px;
+}
+
+.parent-item-2 .child-item-c .child-item-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 27dvh;
+  margin: 3px;
+  margin-top: 8px;
+}
+
+.parent-item-2 .child-item-c .child-item-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 27dvh;
+  margin: 3px;
+  margin-top: 8px;
+}
+
+.parent-item-3 {
+  display: flex;
+  width: 16%;
+  margin-right: 7px;
+}
+
+.parent-item-3 .child-item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55dvh;
+}
+
+.parent-item-4 {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  margin-right: 8px;
+}
+
+.parent-item-4 .child-item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 27dvh;
+  margin: 3px;
+  margin-top: 2px;
+} 
+
+.parent-item-4 .child-item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 27dvh;
+  margin: 3px;
+  margin-top: 2px;
+} 
+
+/* !---------------------Footer----------------------- */
+
+
+.item-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 28dvh;
+  margin: 3px;
+}
+
+.item-9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  height: 28dvh;
+  margin: 3px;
+  margin-right: 5px;
+  background-color: rgb(128, 181, 246);
+}
+
+.item-10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 21.5%;
+  height: 28dvh;
+  margin: 3px;
+  margin-right: 8px;
+}
+
+.item-11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 28dvh;
+  margin: 3px;
+}
